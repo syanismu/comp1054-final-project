@@ -1,0 +1,119 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alex+Brush&family=Arima+Madurai&family=Assistant&family=Cormorant+Garamond&family=Cormorant+Upright&family=Creepster&family=Great+Vibes&family=Italianno&family=Julee&family=Laila&family=Literata:opsz@7..72&family=Lora&family=Parisienne&family=Petit+Formal+Script&family=Playfair+Display&family=Pontano+Sans&family=Prata&family=Roboto+Mono&family=Rochester&family=Solitreo&family=Tangerine:wght@700&family=Taviraj&display=swap');
+
+@font-face {
+    font-family: "AutumnFlowers";
+    src: url(../fonts/autumn-flowers-font/AutumnFlowers-9YVZK.otf);
+}
+
+p, a, li {
+    font-family: 'Laila', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #1b1b1b;
+}
+
+body {
+    background-color: rgb(246, 224, 240);
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(247, 224, 240);
+}
+
+.header-image {
+    height: 90%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.header-image img {
+    height: 36%;
+    width: auto;
+    transform: scaleX(-1);
+}
+
+.icons {
+    font-size: 3vh;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.icons i{
+    padding: 0.15em;
+}
+
+.logo-title {
+    height: 75%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title img {
+    height: 70%;
+    width: auto;
+    margin-top: 0.5em;
+}
+
+.logo-title h1 {
+    font-family: "AutumnFlowers";
+    font-size: 9vh;
+    position: relative;
+    color: #642c5f;
+}
+
+/* HEADER NAV */
+
+.main-nav {
+    height: 25%;
+    width: 100%;
+    background-color: rgb(255, 243, 252);
+}
+
+.main-nav nav {
+    height: 100%;
+}
+
+.main-nav nav menu {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.main-nav nav menu li {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.main-nav nav menu li a{
+    padding: 1em;
+    transition: all 0.5s ease-in-out;
+    color: #642c5f;
+}
+
+.main-nav nav menu li a:hover {
+    border-radius: 10px;
+    transform: scale(1.5);
+    color: #c159b8;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
