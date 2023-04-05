@@ -36,6 +36,8 @@ header {
     width: 100%;
     height: 40vh;
     background-color: rgb(247, 224, 240);
+    background-image: url(../images/bubbles.png);
+    background-size: contain;
 }
 
 .header-image {
@@ -109,7 +111,7 @@ header {
     width: auto;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.4vw;
 }
 
 .main-nav nav menu li a {
@@ -156,7 +158,7 @@ main {
     width: 100%;
     text-align: center;
     text-shadow: 3px 2px rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .bannerSlideshow p {
@@ -253,7 +255,7 @@ main {
 }
 
 .title h3 {
-    font-size: 85px;
+    font-size: 8vw;
     color: #642c5f;
     font-family: "Dolly";
     text-transform: lowercase;
@@ -280,7 +282,7 @@ main {
     filter: drop-shadow(15px 10px 4px #642c5f);
 }
 
-#shirts{
+#shirts {
     background-image: url(../images/shirt3.jpg);
     background-size: contain;
     filter: brightness(70%);
@@ -305,14 +307,17 @@ main {
 }
 
 .promo-imgs p {
-    font-size: 78px;
+    font-size: 5vw;
     font-family: "BoldTestament";
     text-align: center;
     color: #000000;
     text-shadow: 2px 2px #ffffff;
 }
 
-#shirts:hover, #figures:hover, #makeup:hover, #stickers:hover {
+#shirts:hover,
+#figures:hover,
+#makeup:hover,
+#stickers:hover {
     filter: none;
 }
 
@@ -329,10 +334,10 @@ main {
 
 .promo-svg rect {
     fill: none;
-    stroke: #ff2674; 
-    stroke-width: 10; 
+    stroke: #ff2674;
+    stroke-width: 10;
     stroke-dasharray: 422, 0;
-    transition: all .35s linear; 
+    transition: all .35s linear;
 }
 
 .promo-svg:hover rect {
@@ -340,4 +345,141 @@ main {
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 50;
     transition: all 1s ease-in-out;
+}
+
+/* WHATS HOT SECTION */
+
+.popular {
+    width: 90%;
+    margin: auto;
+}
+
+.title {
+    margin-top: 6em;
+}
+
+.prod-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2em 0 4em 0;
+}
+
+.product-container {
+    filter: drop-shadow(15px 10px 4px #642c5f);
+}
+
+.prod-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.prod-desc {
+    padding: 2em 1em;
+    background-color: #ff9fda;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prod-desc p {
+    font-size: 1.3vw;
+    line-height: 1.2;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 22vw;
+    height: 22vw;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #ffbbe5;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3.2vw;
+    padding: 0.5em 0;
+}
+
+.flip-card-back a p {
+    color: #f4f4f4;
+    margin: 0.5em 0;
+}
+
+/* FOOTER */
+
+footer {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+    background-color: #ff2674;
+}
+
+footer img {
+    height: 80%;
+}
+
+footer img:nth-child(2) {
+    height: 100%;
+}
+
+footer div {
+    
+}
+
+footer div ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+footer div ul li {
+    height: auto;
+    display: flex;
+    text-align: right;
+}
+
+footer div ul li img {
+    height: 20px;
 }
