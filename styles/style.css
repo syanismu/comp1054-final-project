@@ -7,6 +7,16 @@
     src: url(../fonts/autumn-flowers-font/AutumnFlowers-9YVZK.otf);
 }
 
+@font-face {
+    font-family: "Dolly";
+    src: url(../fonts/dollyn-script-font/DollynScriptDemoRegular-Bym5.ttf);
+}
+
+@font-face {
+    font-family: "BoldTestament";
+    src: url(../fonts/bold-testament-font/BoldTestament-MxlY.ttf);
+}
+
 p,
 a,
 li {
@@ -128,8 +138,13 @@ main {
     margin: auto;
 }
 
+.bannerSlideshow {
+    width: 100%;
+}
+
 .bannerSlideshow img {
     filter: brightness(70%);
+    width: 100%;
 }
 
 .bannerSlideshow h2 {
@@ -188,7 +203,7 @@ main {
 .dot {
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 5px 2px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     display: inline-block;
@@ -223,4 +238,106 @@ main {
     100% {
         opacity: 0.1;
     }
+}
+
+/* PROMOTIONS SECTION */
+
+.promos {
+    width: 90%;
+    margin: auto;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h3 {
+    font-size: 85px;
+    color: #642c5f;
+    font-family: "Dolly";
+    text-transform: lowercase;
+}
+
+.title img {
+    height: 50px;
+    margin-left: 1em;
+}
+
+.promo-imgs {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.promo-imgs div {
+    width: 18vw;
+    height: 18vw;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(15px 10px 4px #642c5f);
+}
+
+#shirts{
+    background-image: url(../images/shirt3.jpg);
+    background-size: contain;
+    filter: brightness(70%);
+}
+
+#figures {
+    background-image: url(../images/figure5.jpg);
+    background-size: contain;
+    filter: brightness(70%);
+}
+
+#makeup {
+    background-image: url(../images/makeup4.jpg);
+    background-size: contain;
+    filter: brightness(70%);
+}
+
+#stickers {
+    background-image: url(../images/sticker20.jpg);
+    background-size: contain;
+    filter: brightness(70%);
+}
+
+.promo-imgs p {
+    font-size: 78px;
+    font-family: "BoldTestament";
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px #ffffff;
+}
+
+#shirts:hover, #figures:hover, #makeup:hover, #stickers:hover {
+    filter: none;
+}
+
+.promo-svg {
+    width: 5%;
+    margin: auto;
+}
+
+.promo-svg svg {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+}
+
+.promo-svg rect {
+    fill: none;
+    stroke: #ff2674; 
+    stroke-width: 10; 
+    stroke-dasharray: 422, 0;
+    transition: all .35s linear; 
+}
+
+.promo-svg:hover rect {
+    stroke-width: 0;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 50;
+    transition: all 1s ease-in-out;
 }
