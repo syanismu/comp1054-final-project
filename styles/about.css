@@ -12,11 +12,6 @@
     src: url(../fonts/dollyn-script-font/DollynScriptDemoRegular-Bym5.ttf);
 }
 
-@font-face {
-    font-family: "BoldTestament";
-    src: url(../fonts/bold-testament-font/BoldTestament-MxlY.ttf);
-}
-
 p,
 a,
 li {
@@ -242,11 +237,11 @@ main {
 input {
     width: 10vw;
     border: none;
-  border-bottom: 2px solid #642c5f;
-  padding: 0.25em;
-  margin-top: 0.5em;
-  font-size: 1.1vw;
-  font-family: 'Laila', sans-serif;
+    border-bottom: 2px solid #642c5f;
+    padding: 0.25em;
+    margin-top: 0.5em;
+    font-size: 1.1vw;
+    font-family: 'Laila', sans-serif;
 }
 
 form button {
@@ -305,7 +300,7 @@ footer div {
     opacity: 0;
 }
 
-.footer-nav nav menu a:hover{
+.footer-nav nav menu a:hover {
     color: #f2f2f2;
 }
 

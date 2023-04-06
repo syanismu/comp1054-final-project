@@ -12,11 +12,6 @@
     src: url(../fonts/dollyn-script-font/DollynScriptDemoRegular-Bym5.ttf);
 }
 
-@font-face {
-    font-family: "BoldTestament";
-    src: url(../fonts/bold-testament-font/BoldTestament-MxlY.ttf);
-}
-
 p,
 a,
 li,

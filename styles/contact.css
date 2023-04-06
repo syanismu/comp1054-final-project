@@ -12,14 +12,10 @@
     src: url(../fonts/dollyn-script-font/DollynScriptDemoRegular-Bym5.ttf);
 }
 
-@font-face {
-    font-family: "BoldTestament";
-    src: url(../fonts/bold-testament-font/BoldTestament-MxlY.ttf);
-}
-
 p,
 a,
-li {
+li,
+h2 {
     font-family: 'Laila', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -28,7 +24,7 @@ li {
 
 body {
     background-color: rgb(246, 224, 240);
-    background-image: url(../images/sparkle4.gif);
+    background-image: url(../images/sparkle2.gif);
     background-repeat: repeat;
 }
 
@@ -131,12 +127,99 @@ header {
 
 main {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
+.form-container {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.form-container h2 {
+    font-family: "Dolly";
+    text-transform: lowercase;
+    font-size: 8vw;
+}
 
+.form-container p {
+    padding: 0.5em;
+}
 
+.form-container form {
+    margin-top: 2em;
+}
 
+.form-container form fieldset{
+    margin: auto;
+}
+
+.form-container form fieldset:first-child {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-container form fieldset:last-child {
+    margin-top: 1em;
+}
+
+.form-container form fieldset:last-child legend, select {
+    margin-left: 0.6em;
+    font-family: 'Laila', sans-serif;
+    color: #642c5f;
+    font-size: 1.1vw;
+}
+
+.form-container form fieldset select, input {
+    padding: 0.15em;
+    width: 15em;
+}
+
+.form-container form fieldset select {
+    margin-bottom: 1em;
+}
+
+.form-container form fieldset p label {
+    font-size: 1.1vw;
+    line-height: 1.5;
+}
+
+.form-container form fieldset p textarea {
+    width: 40vw;
+    height: 12vh;
+}
+
+form button {
+    background-color: #fff3fa;
+    color: #642c5f;
+    border-top: 2px solid #e1aadc;
+    border-right: 2px solid #975a92;
+    border-bottom: 2px solid #975a92;
+    border-left: 2px solid #e1aadc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #642c5f;
+    font-size: 1.2vw;
+    font-family: 'Laila', sans-serif;
+    padding: 0.26em;
+    transition: 0.5s ease-in-out;
+}
+
+form button:hover {
+    transform: scale(.9);
+}
+
+.side-img {
+    width: 40%;
+}
+
+.side-img img {
+    width: 100%;
+}
 
 
 
@@ -149,7 +232,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 8em;
+    margin: auto;
     background-color: #ffbbe5;
 }
 

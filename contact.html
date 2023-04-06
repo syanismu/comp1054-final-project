@@ -38,49 +38,55 @@
     </header>
 
     <main>
-        <h2>Contact Us</h2>
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <p>Having trouble with merchandise? Have questions? Want to chat?</p>
+            <p>Contact us below!</p>
+            <form action="#">
+                <fieldset>
+                    <p>
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" name="firstName" id="firstName">
+                    </p>
 
-        <form action="#">
-            <fieldset>
-                <legend>Create Account</legend>
-                <p>
-                    <label for="firstName">First Name</label><br>
-                    <input type="text" name="firstName" id="firstName">
-                </p>
+                    <p>
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" name="lastName" id="lastName">
+                    </p>
 
-                <p>
-                    <label for="lastName">Last Name</label><br>
-                    <input type="text" name="lastName" id="lastName">
-                </p>
+                    <p>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email">
+                    </p>
+                </fieldset>
 
-                <p>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email">
-                </p>
-            </fieldset>
+                <fieldset>
 
-            <fieldset>
+                    <legend>Reason for Contacting</legend>
+                    <select name="reason" id="reason">
+                        <option value="generalInquiry">General Inquiry</option>
+                        <option value="returnExchange">Returns/Exchanges</option>
+                        <option value="chat">Just Chatting</option>
+                        <option value="recommendations">Merch Recommendations</option>
+                        <option value="review">Reviews</option>
+                    </select>
 
-                <legend>Reason for Contacting</legend>
-                <select name="reason" id="reason">
-                    <option value="generalInquiry">General Inquiry</option>
-                    <option value="businessProposal">Business Proposal</option>
-                    <option value="corpOrder">Corporate Order</option>
-                </select>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea rows="13" cols="100" input class="message" placeholder="Enter Message Here..."></textarea>
-                </p>
+                    <p>
+                        <label>Message</label><br>
+                        <textarea rows="10" cols="80" class="message" placeholder="Sailor Moon is amazing! I want to be a magic girl and your merch makes me feel like one!"></textarea>
+                    </p>
 
 
-                <p>
-                    <button type="submit">Sign Up</button>
-                </p>
-            </fieldset>
-        </form>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
 
+        <div class="side-img">
         <img src="./images/art-nouveau.jpg" alt="">
+    </div>
     </main>
 
     <footer>
