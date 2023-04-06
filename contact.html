@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,7 @@
 <body>
     <header>
         <div class="header-image">
-            <img src="./images/sm-sitting2.png" alt="">
+            <img src="./images/sm-sitting2.png" alt="Sailor Moon sitting on a moon">
         </div>
         <div class="icons">
             <i class="fa-solid fa-user"></i>
@@ -21,7 +22,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="logo-title">
-            <img src="./images/ribbon.png" alt="">
+            <img src="./images/ribbon.png" alt="The Moon Prism Logo">
             <h1>Moon Prism</h1>
         </div>
         <div class="main-nav">
@@ -35,6 +36,99 @@
             </nav>
         </div>
     </header>
-    
+
+    <main>
+        <h2>Contact Us</h2>
+
+        <form action="#">
+            <fieldset>
+                <legend>Create Account</legend>
+                <p>
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" name="firstName" id="firstName">
+                </p>
+
+                <p>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" name="lastName" id="lastName">
+                </p>
+
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email">
+                </p>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Reason for Contacting</legend>
+                <select name="reason" id="reason">
+                    <option value="generalInquiry">General Inquiry</option>
+                    <option value="businessProposal">Business Proposal</option>
+                    <option value="corpOrder">Corporate Order</option>
+                </select>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea rows="13" cols="100" input class="message" placeholder="Enter Message Here..."></textarea>
+                </p>
+
+
+                <p>
+                    <button type="submit">Sign Up</button>
+                </p>
+            </fieldset>
+        </form>
+
+        <img src="./images/art-nouveau.jpg" alt="">
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <img src="./images/lightmode.gif" alt="A gif of Sailor Moon in a heart blinking">
+            <nav>
+                <menu>
+                    <a href="./index.html">
+                        <li>
+                            <img src="./images/finger-arrow-right.gif"
+                                alt="Cursor hand pointing right with heart on pointer finger. Gif">
+                            Home
+                        </li>
+                    </a>
+                    <a href="./about.html">
+                        <li>
+                            <img src="./images/finger-arrow-right.gif"
+                                alt="Cursor hand pointing right with heart on pointer finger. Gif">
+                            About Us
+                        </li>
+                    </a>
+                    <a href="./products.html">
+                        <li>
+                            <img src="./images/finger-arrow-right.gif"
+                                alt="Cursor hand pointing right with heart on pointer finger. Gif">
+                            Merch
+                        </li>
+                    </a>
+                    <a href="./contact.html">
+                        <li>
+                            <img src="./images/finger-arrow-right.gif"
+                                alt="Cursor hand pointing right with heart on pointer finger. Gif">
+                            Contact Us
+                        </li>
+                    </a>
+                </menu>
+            </nav>
+        </div>
+        <div>
+            <ul>
+                <li>Moon Prism</li>
+                <li>+81274011474</li>
+                <li>customersupport@moonprism.com</li>
+                <li>442 Sakura Rd, Crystal Tokyo, Japan, 044-0089</li>
+                <li>&copy;2023 Shania Muller </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

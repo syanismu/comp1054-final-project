@@ -44,7 +44,7 @@ header {
 }
 
 .header-image {
-    width: 16.6vw;
+    width: 22vh;
     position: absolute;
     top: 2%;
     left: 2%;
@@ -245,15 +245,6 @@ h3 {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 
 footer {
@@ -289,10 +280,16 @@ footer div {
 .footer-nav nav menu li img {
     height: 1.2vw;
     margin-right: 0.5em;
+    opacity: 0;
 }
 
-.footer-nav nav menu li a:hover {
+.footer-nav nav menu a:hover li{
     color: #f2f2f2;
+}
+
+.footer-nav nav menu a:hover img {
+    opacity: 100;
+    color: #fff;
 }
 
 .footer-nav img {
