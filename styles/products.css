@@ -19,7 +19,8 @@
 
 p,
 a,
-li {
+li,
+h3 {
     font-family: 'Laila', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -234,7 +235,8 @@ article {
     border-top: 2px solid #c159b8;
 }
 
-.desc p {
+.desc p,
+h3 {
     font-size: 1vw;
     padding: 0.5em;
 }
