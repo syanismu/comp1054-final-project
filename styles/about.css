@@ -305,7 +305,7 @@ footer div {
     opacity: 0;
 }
 
-.footer-nav nav menu a:hover li{
+.footer-nav nav menu a:hover{
     color: #f2f2f2;
 }
 
