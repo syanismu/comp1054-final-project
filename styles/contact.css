@@ -7,15 +7,29 @@
     src: url(../fonts/autumn-flowers-font/AutumnFlowers-9YVZK.otf);
 }
 
-p, a, li {
+@font-face {
+    font-family: "Dolly";
+    src: url(../fonts/dollyn-script-font/DollynScriptDemoRegular-Bym5.ttf);
+}
+
+@font-face {
+    font-family: "BoldTestament";
+    src: url(../fonts/bold-testament-font/BoldTestament-MxlY.ttf);
+}
+
+p,
+a,
+li {
     font-family: 'Laila', sans-serif;
     text-decoration: none;
     list-style: none;
-    color: #1b1b1b;
+    color: #642c5f;
 }
 
 body {
     background-color: rgb(246, 224, 240);
+    background-image: url(../images/sparkle4.gif);
+    background-repeat: repeat;
 }
 
 /* HEADER */
@@ -24,6 +38,8 @@ header {
     width: 100%;
     height: 40vh;
     background-color: rgb(247, 224, 240);
+    background-image: url(../images/bubbles.png);
+    background-size: contain;
 }
 
 .header-image {
@@ -46,7 +62,7 @@ header {
     right: 3%;
 }
 
-.icons i{
+.icons i {
     padding: 0.15em;
 }
 
@@ -97,13 +113,12 @@ header {
     width: auto;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.4vw;
 }
 
-.main-nav nav menu li a{
+.main-nav nav menu li a {
     padding: 1em;
     transition: all 0.5s ease-in-out;
-    color: #642c5f;
 }
 
 .main-nav nav menu li a:hover {
@@ -116,4 +131,82 @@ header {
 
 main {
     width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8em;
+    background-color: #ffbbe5;
+}
+
+footer div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav nav {
+    height: auto;
+}
+
+.footer-nav nav menu {
+    padding: 0.5em;
+    height: 100%;
+}
+
+.footer-nav nav menu li {
+    padding: 0.5em;
+    font-size: 1.1vw;
+}
+
+.footer-nav nav menu li img {
+    height: 1.2vw;
+    margin-right: 0.5em;
+}
+
+.footer-nav nav menu li a:hover {
+    color: #f2f2f2;
+}
+
+.footer-nav img {
+    height: 100%;
+}
+
+footer div ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0 2em;
+}
+
+footer div ul li {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    line-height: 2;
+    color: #642c5f;
+    font-size: 1.1vw;
+}
+
+footer div ul li:first-child {
+    font-family: "AutumnFlowers";
+    font-size: 2vw;
+    line-height: 1.1;
 }

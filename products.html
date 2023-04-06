@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="./styles/products.css">
     <script src="https://kit.fontawesome.com/e4fd6df5c5.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/ribbon.png">
+    <script src="./javascript/filter.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="header-image">
-            <img src="./images/sm-sitting2.png" alt="">
+            <img src="./images/sm-sitting2.png" alt="Sailor Moon sitting on a moon">
         </div>
         <div class="icons">
             <i class="fa-solid fa-user"></i>
@@ -21,7 +23,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="logo-title">
-            <img src="./images/ribbon.png" alt="">
+            <img src="./images/ribbon.png" alt="The Moon Prism Logo">
             <h1>Moon Prism</h1>
         </div>
         <div class="main-nav">
@@ -35,6 +37,595 @@
             </nav>
         </div>
     </header>
-    
+
+    <div class="content">
+        <aside>
+            <h2>Filters</h2>
+            <ul>
+                <li class="filter" data-filter="all">All</li>
+                <li class="filter" data-filter="clothing">Clothing</li>
+                <li class="filter" data-filter="jewelry">Jewelry</li>
+                <li class="filter" data-filter="bags">Bags</li>
+                <li class="filter" data-filter="makeup">Makeup</li>
+                <li class="filter" data-filter="figures">Figures</li>
+                <li class="filter" data-filter="stickers">Stickers</li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>Our Merch</h2>
+
+            <div class="products">
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/shirt3.jpg" alt="Sailor Moon shirt">
+                    </div>
+                    <div class="desc">
+                        <p>Japanese Graphic Tee</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/earrings4.png" alt="earrings">
+                    </div>
+                    <div class="desc">
+                        <p>Gold Moon Wand Earrings</p>
+                        <p>$79.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/purse7.jpg" alt="A black Luna purse">
+                    </div>
+                    <div class="desc">
+                        <p>Black Luna Purse</p>
+                        <p>$59.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeupbrush2.jpg" alt="Pack of 4 makeup brushes that look like Sailor Moon's wands">
+                    </div>
+                    <div class="desc">
+                        <p>4pk Makeup Brushes</p>
+                        <p>$29.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure5.jpg" alt="Sailor Moon sitting in a glass">
+                    </div>
+                    <div class="desc">
+                        <p>SM Glass Fig</p>
+                        <p>$49.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker8.jpg" alt="Fight like a girl sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Fight Like a Girl Sticker</p>
+                        <p>$3.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/shirt6.jpg" alt="Purple long sleeve Sailor Moon shirt">
+                    </div>
+                    <div class="desc">
+                        <p>Purple Button Up</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/earrings5.png" alt="earrings">
+                    </div>
+                    <div class="desc">
+                        <p>Gold Heart Wand Earrings</p>
+                        <p>$79.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/backpack4.jpeg" alt="bag">
+                    </div>
+                    <div class="desc">
+                        <p>White Convertible Bag</p>
+                        <p>$59.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeup.jpg" alt="makeup">
+                    </div>
+                    <div class="desc">
+                        <p>Colorpop Lip Gloss 2pk</p>
+                        <p>$29.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure13.jpg" alt="figure">
+                    </div>
+                    <div class="desc">
+                        <p>Nendoroid</p>
+                        <p>$109.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker20.jpg" alt="sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Crybaby Sticker</p>
+                        <p>$3.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sweater.jpg" alt="clothing">
+                    </div>
+                    <div class="desc">
+                        <p>Eyes Sweater</p>
+                        <p>$64.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/earrings2.jpeg" alt="earrings">
+                    </div>
+                    <div class="desc">
+                        <p>Pack of 5 Earrings</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeup3.jpg" alt="makeup">
+                    </div>
+                    <div class="desc">
+                        <p>Colorpop Eye Glitter 2pk</p>
+                        <p>$39.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/backpack7.jpeg" alt="bag">
+                    </div>
+                    <div class="desc">
+                        <p>Blue Sailor Bag</p>
+                        <p>$59.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure16.jpg" alt="figure">
+                    </div>
+                    <div class="desc">
+                        <p>Funkp Pop</p>
+                        <p>$14.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker28.jpg" alt="sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Tongue Out Sticker</p>
+                        <p>$3.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/shirt7.jpg" alt="clothing">
+                    </div>
+                    <div class="desc">
+                        <p>Eyes Sweater</p>
+                        <p>$64.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/ring.jpg" alt="ring">
+                    </div>
+                    <div class="desc">
+                        <p>Heart Wings Ring</p>
+                        <p>$99.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeup5.jpg" alt="makeup">
+                    </div>
+                    <div class="desc">
+                        <p>Colorpop Blush</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/purse5.jpg" alt="bag">
+                    </div>
+                    <div class="desc">
+                        <p>Sailor Bag Purse</p>
+                        <p>$59.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure2.jpg" alt="figure">
+                    </div>
+                    <div class="desc">
+                        <p>Bandai Figure</p>
+                        <p>$39.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker29.jpg" alt="sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Ramen Sticker</p>
+                        <p>$3.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sweater5.jpg" alt="clothing">
+                    </div>
+                    <div class="desc">
+                        <p>Pink Window Sweater</p>
+                        <p>$64.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/ring2.jpeg" alt="ring">
+                    </div>
+                    <div class="desc">
+                        <p>Crescent Rose Ring</p>
+                        <p>$99.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeup6.jpg" alt="makeup">
+                    </div>
+                    <div class="desc">
+                        <p>Colorpop Eye Shadow</p>
+                        <p>$44.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/wallet2.jpg" alt="bag">
+                    </div>
+                    <div class="desc">
+                        <p>Black Cat Wallet</p>
+                        <p>$49.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure6.jpg" alt="figure">
+                    </div>
+                    <div class="desc">
+                        <p>Crescent Podium Figure</p>
+                        <p>$89.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker3.jpg" alt="sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Heart Wink Sticker</p>
+                        <p>$3.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sweater4.jpeg" alt="clothing">
+                    </div>
+                    <div class="desc">
+                        <p>Pink Xmas Sweater</p>
+                        <p>$64.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/necklace11.png" alt="ring">
+                    </div>
+                    <div class="desc">
+                        <p>Moon Wand Necklace</p>
+                        <p>$99.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeupbrush.jpeg" alt="makeup">
+                    </div>
+                    <div class="desc">
+                        <p>8pk Makeup Brush Set</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/wallet5.jpeg" alt="bag">
+                    </div>
+                    <div class="desc">
+                        <p>Pink Rose Wallet</p>
+                        <p>$39.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure7.jpg" alt="figure">
+                    </div>
+                    <div class="desc">
+                        <p>Luna Figure</p>
+                        <p>$29.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker35.jpg" alt="sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Wicked Sticker</p>
+                        <p>$4.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/shirt5.jpeg" alt="clothing">
+                    </div>
+                    <div class="desc">
+                        <p>Purple Long Sleeve</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/necklace.jpeg" alt="ring">
+                    </div>
+                    <div class="desc">
+                        <p>Star Moon Necklace</p>
+                        <p>$39.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeupbrush.jpg" alt="makeup">
+                    </div>
+                    <div class="desc">
+                        <p>8pk Makeup Brush Set V2</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/backpack2.jpg" alt="bag">
+                    </div>
+                    <div class="desc">
+                        <p>Loungefly Backpack</p>
+                        <p>$69.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure8.jpg" alt="figure">
+                    </div>
+                    <div class="desc">
+                        <p>Transformation Figure</p>
+                        <p>$109.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker2.jpg" alt="sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Sitting Moon Sticker</p>
+                        <p>$3.99</p>
+                    </div>
+                </article>
+
+
+
+
+
+
+
+
+                
+                <article class="item" data-item="clothing">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sweater2.jpg" alt="clothing">
+                    </div>
+                    <div class="desc">
+                        <p>Pink Tie Dye Sweater</p>
+                        <p>$24.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="jewelry">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/necklace12.png" alt="ring">
+                    </div>
+                    <div class="desc">
+                        <p>Heart Wand Necklace</p>
+                        <p>$99.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="makeup">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/makeup2.jpg" alt="makeup">
+                    </div>
+                    <div class="desc">
+                        <p>Colorpop Full Set</p>
+                        <p>$139.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="bags">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/purse2.jpeg" alt="bag">
+                    </div>
+                    <div class="desc">
+                        <p>Pink Purse</p>
+                        <p>$79.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="figures">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/figure11.jpg" alt="figure">
+                    </div>
+                    <div class="desc">
+                        <p>Banpresto Figure</p>
+                        <p>$89.99</p>
+                    </div>
+                </article>
+
+                <article class="item" data-item="stickers">
+                    <div class="image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="./images/sticker24.jpg" alt="sticker">
+                    </div>
+                    <div class="desc">
+                        <p>Beach Sticker</p>
+                        <p>$3.99</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="footer-nav">
+            <img src="./images/lightmode.gif" alt="A gif of Sailor Moon in a heart blinking">
+            <nav>
+                <menu>
+                    <li><img src="./images/finger-arrow-right.gif"
+                            alt="Cursor hand pointing right with heart on pointer finger. Gif"><a
+                            href="./index.html">Home</a></li>
+                    <li><img src="./images/finger-arrow-right.gif"
+                            alt="Cursor hand pointing right with heart on pointer finger. Gif"><a
+                            href="./about.html">About Us</a></li>
+                    <li><img src="./images/finger-arrow-right.gif"
+                            alt="Cursor hand pointing right with heart on pointer finger. Gif"><a
+                            href="./products.html">Merch</a></li>
+                    <li><img src="./images/finger-arrow-right.gif"
+                            alt="Cursor hand pointing right with heart on pointer finger. Gif"><a
+                            href="./contact.html">Contact Us</a></li>
+                </menu>
+            </nav>
+        </div>
+        <div>
+            <ul>
+                <li>Moon Prism</li>
+                <li>+81274011474</li>
+                <li>customersupport@moonprism.com</li>
+                <li>442 Sakura Rd, Crystal Tokyo, Japan, 044-0089</li>
+                <li>&copy;2023 Shania Muller </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
