@@ -42,6 +42,11 @@ header {
     background-size: contain;
 }
 
+
+header input {
+    display: none;
+}
+
 .header-image {
     height: 90%;
     position: absolute;

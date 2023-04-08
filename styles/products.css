@@ -38,6 +38,10 @@ header {
     background-size: contain;
 }
 
+header input {
+    display: none;
+}
+
 .header-image {
     width: 22vh;
     position: absolute;
