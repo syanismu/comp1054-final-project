@@ -198,7 +198,11 @@ select {
     line-height: 1.5;
 }
 
-.reason {
+.form-container fieldset:last-child legend {
+    text-align: center;
+}
+
+.form-container fieldset:last-child select {
     margin-left: 30%;
 }
 
@@ -442,17 +446,8 @@ footer div ul li:first-child {
         font-size: 18px;
     }
     
-    .reason {
-        margin-left: 30%;
-    }
-
-    .form-container form fieldset p textarea {
-        width: 40vw;
-        height: 12vh;
-        font-size: 0.9vw;
-    }
-
-    .form-container form fieldset select {
+    .form-container fieldset:last-child select {
+        margin-left: 32%;
         width: auto;
     }
 
@@ -528,8 +523,8 @@ footer div ul li:first-child {
         width: 95%;
     }
 
-    .reason {
-        margin-left: 17%;
+    .form-container fieldset:last-child select {
+        margin-left: 22%;
     }
 
     /* FOOTER */
@@ -562,7 +557,7 @@ footer div ul li:first-child {
 }
 
 @media screen and (max-width: 380px) {
-    .reason {
+    .form-container fieldset:last-child select {
         margin-left: 18%;
     }
 
@@ -577,7 +572,7 @@ footer div ul li:first-child {
         font-size: 55px;
     }
 
-    .reason {
+    .form-container fieldset:last-child select {
         margin-left: 12%;
     }
 }

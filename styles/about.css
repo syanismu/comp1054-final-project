@@ -230,7 +230,7 @@ main {
     text-align: center;
 }
 
-.about-container section form fieldset legend p label {
+.account-container section form fieldset p label {
     font-size: 1.2vw;
 }
 
@@ -336,4 +336,271 @@ footer div ul li:first-child {
     font-family: "AutumnFlowers";
     font-size: 2vw;
     line-height: 1.1;
+}
+
+/* ********************************************************************** */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 770px) {
+
+    /* NAV */
+    header input+label {
+        position: fixed;
+        top: 55px;
+        right: 40px;
+        width: 25px;
+        height: 20px;
+        z-index: 5;
+    }
+
+    header input {
+        opacity: 0;
+    }
+
+    header label span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        display: block;
+        transition: 0.5s;
+        background: #0e0e0e;
+    }
+
+    header input+label span:first-child {
+        top: 3px;
+    }
+
+    header input+label span:last-child {
+        top: 16px;
+    }
+
+    header label:hover {
+        cursor: pointer;
+    }
+
+    header input:checked+label span {
+        opacity: 0;
+        top: 50%;
+    }
+
+    header input:checked+label span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+    }
+
+    header input:checked+label span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+    }
+
+    header input~.main-nav nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        overflow: hidden;
+    }
+
+    header input~.main-nav nav>menu {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    header input~.main-nav nav>menu>li {
+        transition: 0.5s;
+        transition-delay: 0s;
+        font-size: 20px;
+        position: relative;
+        margin: auto;
+        display: none;
+    }
+
+    header input~.main-nav nav>menu>li>a {
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        padding: 30px;
+    }
+
+    header input:checked~.main-nav nav {
+        height: auto;
+        transition-delay: 0s;
+        background-color: rgb(255, 243, 252);
+    }
+
+    header input:checked~.main-nav nav>menu>li {
+        transition-delay: 0.5s;
+        display: initial;
+    }
+
+    /* MAIN */
+
+    h2 {
+        font-size: 60px;
+    }
+
+    .about-container section {
+        width: 90%;
+    }
+
+    .about-container section div p {
+        font-size: 18px;
+    }
+
+    .about-container img {
+        display: none;
+    }
+    
+    .account-container section p {
+        font-size: 18px;
+    }
+
+    .account-container section form fieldset legend {
+        font-size: 40px;
+    }
+
+    .account-container section form fieldset p label {
+        font-size: 16px;
+    }
+
+    .account-container section form fieldset p input {
+        font-size: 16px;
+        width: 110px;
+    }
+
+    form button {
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-nav nav menu li {
+        font-size: 12px;
+    }
+
+    .footer-nav nav menu li img {
+        display: none;
+    }
+
+    footer div ul li {
+        font-size: 12px;
+    }
+
+    footer div ul li:first-child {
+        font-size: 22px;
+    }
+
+}
+
+/* SCREEN MAX WIDTH 430PX */
+
+@media screen and (max-width: 430px) {
+
+    /* HEADER AND NAV */
+
+    header {
+        height: 300px;
+    }
+
+    .header-image img {
+        display: none;
+    }
+
+    .logo-title h1 {
+        font-size: 60px;
+    }
+
+    .main-nav {
+        height: 15%;
+    }
+
+
+    /* MAIN */
+
+    main h2 {
+        font-size: 60px;
+    }
+
+    .about-container section {
+        padding: 10px;
+    }
+
+    .account-container img {
+       display: none;
+    }
+
+    .account-container section {
+        width: 100%;
+    }
+
+    .account-container section form {
+        width: auto;
+        flex-direction: column;
+        padding: 10px;
+        margin: auto;
+        margin-top: 1.5em;
+    }
+
+    .account-container section form fieldset {
+        margin: auto;
+        text-align: center;
+    }
+
+    .account-container section form fieldset p label {
+        font-size: 16px;
+    }
+    
+    .account-container section form fieldset p input {
+        font-size: 14px;
+        width: auto;
+    }
+    
+
+    /* FOOTER */
+
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer-nav img {
+        display: none;
+    }
+
+    .footer-nav nav menu {
+        display: flex;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    footer div ul {
+        margin: 20px 0;
+    }
+
+    footer div ul li {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+
+    .logo-title h1 {
+        font-size: 55px;
+    }
 }
