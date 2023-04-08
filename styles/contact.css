@@ -38,6 +38,10 @@ header {
     background-size: contain;
 }
 
+header input {
+    display: none;
+}
+
 .header-image {
     height: 90%;
     position: absolute;
@@ -148,13 +152,15 @@ main {
 
 .form-container p {
     padding: 0.5em;
+    text-align: center;
+    font-size: 1.1vw;
 }
 
 .form-container form {
     margin-top: 2em;
 }
 
-.form-container form fieldset{
+.form-container form fieldset {
     margin: auto;
 }
 
@@ -168,20 +174,23 @@ main {
     margin-top: 1em;
 }
 
-.form-container form fieldset:last-child legend, select {
+.form-container form fieldset:last-child legend,
+select {
     margin-left: 0.6em;
     font-family: 'Laila', sans-serif;
     color: #642c5f;
     font-size: 1.1vw;
 }
 
-.form-container form fieldset select, input {
-    padding: 0.15em;
-    width: 15em;
+.form-container form fieldset p input {
+    padding: 0.25em;
+    font-size: 0.9vw;
 }
 
 .form-container form fieldset select {
     margin-bottom: 1em;
+    padding: 0.15em;
+    width: 15em;
 }
 
 .form-container form fieldset p label {
@@ -189,9 +198,14 @@ main {
     line-height: 1.5;
 }
 
+.reason {
+    margin-left: 30%;
+}
+
 .form-container form fieldset p textarea {
     width: 40vw;
     height: 12vh;
+    font-size: 0.9vw;
 }
 
 form button {
@@ -220,9 +234,6 @@ form button:hover {
 .side-img img {
     width: 100%;
 }
-
-
-
 
 /* FOOTER */
 
@@ -262,7 +273,7 @@ footer div {
     opacity: 0;
 }
 
-.footer-nav nav menu a:hover{
+.footer-nav nav menu a:hover {
     color: #f2f2f2;
 }
 
@@ -297,4 +308,270 @@ footer div ul li:first-child {
     font-family: "AutumnFlowers";
     font-size: 2vw;
     line-height: 1.1;
+}
+
+/* ********************************************************************** */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 770px) {
+
+    /* NAV */
+    header input+label {
+        position: fixed;
+        top: 55px;
+        right: 40px;
+        width: 25px;
+        height: 20px;
+        z-index: 5;
+    }
+
+    header input {
+        opacity: 0;
+    }
+
+    header label span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        display: block;
+        transition: 0.5s;
+        background: #0e0e0e;
+    }
+
+    header input+label span:first-child {
+        top: 3px;
+    }
+
+    header input+label span:last-child {
+        top: 16px;
+    }
+
+    header label:hover {
+        cursor: pointer;
+    }
+
+    header input:checked+label span {
+        opacity: 0;
+        top: 50%;
+    }
+
+    header input:checked+label span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+    }
+
+    header input:checked+label span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+    }
+
+    header input ~ .main-nav nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        overflow: hidden;
+    }
+
+    header input ~ .main-nav nav > menu {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    header input ~ .main-nav nav > menu > li {
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay: 0s;
+        font-size: 20px;
+        position: relative;
+        margin: auto;
+    }
+
+    header input ~ .main-nav nav > menu > li > a {
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        padding: 30px;
+    }
+
+    header input:checked ~ .main-nav nav {
+        height: auto;
+        transition-delay: 0s;
+        background-color: rgb(255, 243, 252);
+    }
+
+    header input:checked ~ .main-nav nav > menu > li {
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+
+    /* FORM */
+
+    .form-container {
+        padding: 1em 0;
+        width: 80%;
+    }
+
+    .form-container h2 {
+        font-size: 70px;
+    }
+
+    .form-container p {
+        font-size: 20px;
+    }
+
+    .form-container form fieldset:last-child legend,
+    select {
+        font-size: 18px;
+    }
+    
+    .form-container form fieldset p input {
+        font-size: 16px;
+    }
+    
+    .form-container form fieldset p label {
+        font-size: 18px;
+    }
+    
+    .reason {
+        margin-left: 30%;
+    }
+
+    .form-container form fieldset p textarea {
+        width: 40vw;
+        height: 12vh;
+        font-size: 0.9vw;
+    }
+
+    .form-container form fieldset select {
+        width: auto;
+    }
+
+    .form-container form fieldset p textarea {
+        width: 70%;
+        height: 20%;
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 20px;
+    }
+
+    /* IMAGE ON SIDE */
+
+    .side-img {
+        width: 0;
+    }
+
+    .side-img img {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-nav nav menu li {
+        font-size: 12px;
+    }
+    
+    .footer-nav nav menu li img {
+        display: none;
+    }
+
+    footer div ul li {
+        font-size: 12px;
+    }
+    
+    footer div ul li:first-child {
+        font-size: 22px;
+    }
+
+}
+
+/* SCREEN MAX WIDTH 430PX */
+
+@media screen and (max-width: 430px) {
+    
+    header {
+        height: 300px;
+    }
+
+    .header-image img {
+        display: none;
+    }
+
+    .logo-title h1 {
+        font-size: 60px;
+    }
+
+    .main-nav { 
+        height: 15%;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+
+    .reason {
+        margin-left: 17%;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer-nav img {
+        display: none;
+    }
+
+    .footer-nav nav menu {
+        display: flex;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    footer div ul {
+        margin: 20px 0;
+    }
+
+    footer div ul li {
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+    .reason {
+        margin-left: 18%;
+    }
+
+    .form-container form fieldset select {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+
+    .logo-title h1 {
+        font-size: 55px;
+    }
+
+    .reason {
+        margin-left: 12%;
+    }
 }
