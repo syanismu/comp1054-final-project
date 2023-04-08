@@ -387,31 +387,31 @@ footer div ul li:first-child {
         margin-top: 25px;
     }
 
-    header input ~ .main-nav nav > menu > li {
-        opacity: 0;
+    header input~.main-nav nav>menu>li {
         transition: 0.5s;
         transition-delay: 0s;
         font-size: 20px;
         position: relative;
         margin: auto;
+        display: none;
     }
 
-    header input ~ .main-nav nav > menu > li > a {
+    header input~.main-nav nav>menu>li>a {
         text-decoration: none;
         font-weight: bold;
         display: block;
         padding: 30px;
     }
 
-    header input:checked ~ .main-nav nav {
+    header input:checked~.main-nav nav {
         height: auto;
         transition-delay: 0s;
         background-color: rgb(255, 243, 252);
     }
 
-    header input:checked ~ .main-nav nav > menu > li {
-        opacity: 1;
+    header input:checked~.main-nav nav>menu>li {
         transition-delay: 0.5s;
+        display: initial;
     }
 
     /* FORM */
@@ -503,6 +503,8 @@ footer div ul li:first-child {
 /* SCREEN MAX WIDTH 430PX */
 
 @media screen and (max-width: 430px) {
+
+    /* HEADER AND NAV */
     
     header {
         height: 300px;
@@ -520,6 +522,8 @@ footer div ul li:first-child {
         height: 15%;
     }
 
+    /* FORM */
+
     .form-container {
         width: 95%;
     }
@@ -527,6 +531,8 @@ footer div ul li:first-child {
     .reason {
         margin-left: 17%;
     }
+
+    /* FOOTER */
 
     footer {
         height: auto;
